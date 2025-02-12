@@ -1,3 +1,3 @@
-module github.com/Armody/PokedexCLI
+module github.com/Armody/Pokedex
 
 go 1.23.5
