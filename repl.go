@@ -7,12 +7,10 @@ import (
 	"strings"
 
 	"github.com/Armody/Pokedex/internal/pokeapi"
-	"github.com/Armody/Pokedex/internal/pokecache"
 )
 
 type config struct {
 	pokeapiClient    pokeapi.Client
-	pokeCache        *pokecache.Cache
 	nextLocationsURL *string
 	prevLocationsURL *string
 }

@@ -7,7 +7,7 @@ import (
 
 type Cache struct {
 	cacheEntry map[string]CacheEntry
-	mu         sync.Mutex
+	mu         *sync.Mutex
 }
 
 type CacheEntry struct {
