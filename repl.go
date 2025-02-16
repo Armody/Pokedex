@@ -12,6 +12,7 @@ import (
 type config struct {
 	pokeapiClient    pokeapi.Client
 	pokedex          map[string]pokeapi.Pokemon
+	experience       int
 	nextLocationsURL *string
 	prevLocationsURL *string
 }
@@ -69,7 +70,7 @@ func getCommands() map[string]cliCommand {
 		},
 		"catch": {
 			name:        "catch <pokemon-name>",
-			description: "Attempt to catch a pokemon. Success rate depends on pokemon's Base Experience",
+			description: "Attempt to catch a pokemon. Success rate depends on pokemon's Base Experience and your experience",
 			callback:    catch,
 		},
 		"inspect": {
